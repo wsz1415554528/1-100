@@ -34,25 +34,6 @@ print("no,thank")
 
 }
 
-
-func optimizationPopSort(list: inout [Int])
-{
-let n = list.count
-for i in 0..<n-1
-{
-    var flag = 0
-    var j = 0
-    for _ in 0..<(n-1-i)
-   if list[j] > [list[j+1]
-   {
-    list[j] ^= list[j+1]
-    list[j+1] ^= list[j]
-    list[j] ^= list[j+1]
-    flag = 1
-    }
-    j += 1
-    }
-    if flag == 0 {
-        braek}
-}
-}
+var bb = ["2","3","1","6","4","7","8","9","10","22"]
+let d = bb.sorted(by:<)
+print("\(d)")
