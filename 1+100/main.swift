@@ -22,18 +22,19 @@ print(sum)
 
 
 
-let www = true
-let sss = false
-if www && sss {
-print("weclcome")
-    
+import Foundation
+var arry = [12,34,2,45,89,43,22,11,98,21]
+for i in 0..<arry.count {
+    for j in i+1..<arry.count
+    {
+        if (arry[i] >= arry[j])
+        {
+            var temp = arry[j]
+            arry[j] = arry[i]
+            arry[i] = temp
+            
+        }
+    }
 }
-else {
-print("no,thank")
+print(arry)
 
-
-}
-
-var bb = ["2","3","1","6","4","7","8","9","10","22"]
-let d = bb.sorted(by:<)
-print("\(d)")
