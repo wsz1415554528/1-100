@@ -22,9 +22,11 @@ print(sum)
 
 
 
-import Foundation
-var arry = [12,34,2,45,89,43,22,11,98,21]
-for i in 0..<arry.count {
+
+
+let age = (("wsz",22,"man"),("wld",23,"man"),("zcp",24,"man"))
+print(age.0.0)
+for i in 0..age{
     for j in i+1..<arry.count
     {
         if (arry[i] >= arry[j])
@@ -32,9 +34,19 @@ for i in 0..<arry.count {
             var temp = arry[j]
             arry[j] = arry[i]
             arry[i] = temp
-            
-        }
-    }
+    
+    
+    
+    
+    
 }
-print(arry)
+
+
+
+
+
+
+
+
+
 
